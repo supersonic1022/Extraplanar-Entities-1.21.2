@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "extraplanarentities",
+	"version": "0.1",
+	"name": "extraplanarentities",
+	"description": "Cubular recreations of the findings of the Zooliminology Project, for the amusement of researchers on downtime",
+	"authors": [
+		"Zooliminology Project Employees #8, #3 and #7, with input from the whole staff"
+	],
+	"contact": {
+		"homepage": "https://quiietjay-shop.fourthwall.com",
+		"sources": "https://github.com/supersonic1022/Extraplanar-Entities-1.21.2"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/extraplanarentities/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zoolim.extraplanar.ExtraplanarEntities"
+		],
+		"fabric-datagen": [
+			"net.zoolim.extraplanar.ExtraplanarEntitiesDataGenerator"
+		],
+		"client": [
+			"net.zoolim.extraplanar.ExtraplanarEntitiesClient"
+		]
+	},
+	"mixins": [
+		"extraplanarentities.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
